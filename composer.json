@@ -1,0 +1,52 @@
+{
+  "name": "ghofurgiovany/pipeline",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "pipeline",
+    "pipe"
+  ],
+  "authors": [
+    {
+      "name": "Ghofur Giovany",
+      "email": "me@0x000.id"
+    }
+  ],
+  "require": {
+    "php": "^8.1.0",
+    "laravel/framework": "^9.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.8",
+    "nunomaduro/collision": "^6.2",
+    "orchestra/testbench": "^7.5",
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.6"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "GhofurGiovany\\Pipeline\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "GhofurGiovany\\Pipeline\\Tests\\": "tests"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "GhofurGiovany\\Pipeline\\ServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
